@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyShop", "ToyShop\ToyShop.csproj", "{FC79488B-35C6-4C24-8FE3-7EDA9AC49766}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC79488B-35C6-4C24-8FE3-7EDA9AC49766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC79488B-35C6-4C24-8FE3-7EDA9AC49766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC79488B-35C6-4C24-8FE3-7EDA9AC49766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC79488B-35C6-4C24-8FE3-7EDA9AC49766}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E43C4CD-2F30-4E99-872C-5C418564132A}
+	EndGlobalSection
+EndGlobal

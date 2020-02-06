@@ -1,0 +1,52 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@model List<Items>
+
+@{
+    ViewData["Title"] = "Shop";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Shop</h1>
+<table>
+
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Description</td>
+            <td>@item.Quantity</td>
+            <td>@item.Price</td>
+
+            <td>
+                @if (HttpContextAccessor.HttpContext.Session.GetString("session_username") != null)
+
+                {
+                    <form asp-controller="Home" method="post" asp-action="Shop">
+                        <input type="hidden" value="@item.Id" name="itemId" />
+                        <input type="submit" name="submit" value="Buy Now" id="@item.Id" />
+                    </form>
+                }
+            </td>
+        </tr>
+    }
+</table>
+
+
+<style>
+    body {
+        background-color: mediumpurple;
+        background-image: url(https://i.pinimg.com/236x/40/36/e4/4036e4b881df8d5580f5c1fea82cbcc4--emma-bunton-spice-girls.jpg);
+        background-repeat: no-repeat;
+        background-size: 275px;
+        background-position: bottom;
+        background-position: center;
+    }
+
+    #leg1 {
+        color: black;
+    }
+</style>
